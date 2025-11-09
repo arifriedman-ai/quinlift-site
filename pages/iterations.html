@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Iterative Design | StepAssist</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="icon" href="../assets/images/logo.png" />
+</head>
+<body>
+  <!-- NAV -->
+  <header class="site-header">
+    <nav class="nav">
+      <div class="nav__logo">
+        <img src="../assets/images/logo.png" alt="Team Logo" />
+        <span>StepAssist</span>
+      </div>
+      <ul class="nav__links">
+        <li><a href="../index.html#hero">Home</a></li>
+        <li><a href="../index.html#explore">Explore</a></li>
+        <li><a href="cad.html">CAD Demo</a></li>
+        <li><a href="research.html">Why Post-Surgery</a></li>
+        <li><a href="iterations.html" style="color:#fff;">Iterative Design</a></li>
+        <li><a href="deliverables.html" class="btn-small">Deliverables</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- INTRO -->
+  <section class="section">
+    <div class="section__title-wrap">
+      <h2>Iterative Design Log</h2>
+      <p>
+        Documenting how the stair-climbing wheel evolved from concept to spring-assisted,
+        medtech-friendly hardware.
+      </p>
+    </div>
+    <p style="color:#cbd5f5; max-width: 52rem;">
+      Because this device interfaces with patients and stairs, we explored multiple wheel
+      configurations, spring placements, and mounting approaches. Below is a visual record of
+      our main iterations — from initial tri-wheel inspiration to our smoother spring-assisted
+      version.
+    </p>
+  </section>
+
+  <!-- WHEEL ITERATIONS (IMAGE-HEAVY) -->
+  <section class="section section--light">
+    <div class="section__title-wrap">
+      <h2>Wheel iterations</h2>
+      <p>Early CAD attempts, step-clearance tests, and spring positioning trials.</p>
+    </div>
+
+    <div class="card-grid">
+      <!-- Replace src with your real PNGs later -->
+      <div class="image-card">
+        <img src="../assets/images/iter-wheel-v1.png" alt="Wheel v1" />
+        <div class="image-card__overlay">
+          <h3>Version 1 — Base tri-wheel</h3>
+          <p>Direct inspiration from warehouse dolly. Worked, but too “clanky.”</p>
+        </div>
+      </div>
+      <div class="image-card">
+        <img src="../assets/images/iter-wheel-v2.png" alt="Wheel v2" />
+        <div class="image-card__overlay">
+          <h3>Version 2 — Added spring housing</h3>
+          <p>Goal: make the upward rotation smoother and more patient-friendly.</p>
+        </div>
+      </div>
+      <div class="image-card">
+        <img src="../assets/images/iter-wheel-v3.png" alt="Wheel v3" />
+        <div class="image-card__overlay">
+          <h3>Version 3 — Walker bracket test</h3>
+          <p>Attachment to standard walker legs; tested clearances on stair edge.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3-WHEEL VS 5-WHEEL COMPARISON -->
+  <section class="section">
+    <div class="section__title-wrap">
+      <h2>3-wheel vs 5-wheel cluster</h2>
+      <p>Exploring stability, smoothness, and manufacturability.</p>
+    </div>
+
+    <div style="display:grid; gap:1.5rem; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));">
+      <!-- 3-Wheel -->
+      <div style="background:rgba(15,23,42,0.4); border:1px solid rgba(148,163,184,0.1); border-radius:1rem; padding:1.2rem;">
+        <h3>3-Wheel Cluster (baseline)</h3>
+        <p style="color:#cbd5f5; margin-top:.5rem;">
+          Pros: simpler, smaller, closer to warehouse dolly, easier to mount on walker leg.
+          <br/>Cons: noticeable “step” during rotation → more vibration felt by user.
+        </p>
+        <img src="../assets/images/3wheel-render.png" 
+            alt="3-Wheel Cluster Render" 
+            style="margin-top:1rem; border-radius:.75rem; width:100%; max-height:200px; object-fit:contain; border:1px solid rgba(148,163,184,.2);" />
+
+      </div>
+
+      <!-- 5-Wheel -->
+      <div style="background:rgba(15,23,42,0.4); border:1px solid rgba(148,163,184,0.1); border-radius:1rem; padding:1.2rem;">
+        <h3>5-Wheel Cluster (exploration)</h3>
+        <p style="color:#cbd5f5; margin-top:.5rem;">
+          Pros: more contact points → smoother stair engagement, less per-step height.
+          <br/>Cons: larger diameter, more parts, potentially harder to print/assemble.
+        </p>
+        <img src="../assets/images/5wheel-render.png" 
+            alt="5-Wheel Cluster Render" 
+            style="margin-top:1rem; border-radius:.75rem; width:100%; max-height:200px; object-fit:contain; border:1px solid rgba(148,163,184,.2);" />
+
+      </div>
+
+      <!-- Decision -->
+      <div style="background:rgba(15,23,42,0.4); border:1px solid rgba(148,163,184,0.1); border-radius:1rem; padding:1.2rem;">
+        <h3>Design takeaway</h3>
+        <p style="color:#cbd5f5; margin-top:.5rem;">
+          For a Florida-home stair use case and a walker-mounted device, we prioritized:
+          <br/>1) smoothness over speed
+          <br/>2) patient comfort over raw mechanical efficiency
+          <br/>3) attachment feasibility
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- OTHER ITERATIONS (EMPTY SLOTS TO FILL LATER) -->
+  <section class="section section--light">
+    <div class="section__title-wrap">
+      <h2>Other iterations & tests</h2>
+      <p>Use these slots to drop in PNGs, screenshots, and test photos.</p>
+    </div>
+
+    <div class="card-grid">
+      <!-- Empty slot 1 -->
+      <div class="image-card">
+        <img src="../assets/images/placeholder.png" alt="Placeholder" />
+        <div class="image-card__overlay">
+          <h3>Mounting angle test</h3>
+          <p>Add notes about how the wheel behaved at 15° vs 25°.</p>
+        </div>
+      </div>
+
+      <!-- Empty slot 2 -->
+      <div class="image-card">
+        <img src="../assets/images/placeholder.png" alt="Placeholder" />
+        <div class="image-card__overlay">
+          <h3>Spring stiffness comparison</h3>
+          <p>Drop in screenshots of force-displacement or CAD configs.</p>
+        </div>
+      </div>
+
+      <!-- Empty slot 3 -->
+      <div class="image-card">
+        <img src="../assets/images/placeholder.png" alt="Placeholder" />
+        <div class="image-card__overlay">
+          <h3>Stair material test</h3>
+          <p>Carpet vs wood vs tile — add pics here.</p>
+        </div>
+      </div>
+
+      <!-- Empty slot 4 -->
+      <div class="image-card">
+        <img src="../assets/images/placeholder.png" alt="Placeholder" />
+        <div class="image-card__overlay">
+          <h3>Final production layout</h3>
+          <p>Use this for final exploded-view screenshots.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p>2025 QuinLift · Built for Dream Team Engineering Designathon</p>
+  </footer>
+</body>
+</html>
